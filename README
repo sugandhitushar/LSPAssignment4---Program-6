@@ -1,0 +1,42 @@
+NAME - program.c
+
+USAGE - 
+$ make
+$ make run
+
+DESCRIPTION - 
+Program which creates 4 number of  threads and our main thread waits till all the thread terminates.
+
+
+Example -
+# make
+gcc -o threadDemo program.c -lpthread
+
+# make run
+./threadDemo
+THREAD 1
+Thread 1: Count=0
+Thread 1: Count=1
+Thread 1: Count=2
+Thread 1: Count=3
+Thread 1: Count=4
+THREAD 3
+Thread 3: Count=6
+Thread 3: Count=7
+Thread 3: Count=8
+Thread 3: Count=9
+Thread 3: Count=10
+THREAD 2
+Thread 2: Count=5
+Thread 2: Count=4
+Thread 2: Count=3
+Thread 2: Count=2
+Thread 2: Count=1
+THREAD 4
+Thread 4: Count=10
+Thread 4: Count=9
+Thread 4: Count=8
+Thread 4: Count=7
+Thread 4: Count=6
+All Threads terminated. Terminating main thread.
+
